@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignUpVC" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignUpVC" customModule="shareapp" customModuleProvider="target">
             <connections>
+                <outlet property="displayNameTextField" destination="aja-eE-qZH" id="iXs-0z-Tmk"/>
+                <outlet property="emailTextField" destination="QiD-fB-SS1" id="15H-a4-aP1"/>
+                <outlet property="passwordTextField" destination="Hnz-5I-uuj" id="XGE-XT-FiX"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -13,7 +17,47 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QiD-fB-SS1">
+                    <rect key="frame" x="34" y="228" width="532" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Display Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aja-eE-qZH">
+                    <rect key="frame" x="34" y="266" width="532" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hnz-5I-uuj">
+                    <rect key="frame" x="34" y="304" width="532" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WXA-zs-Yu9">
+                    <rect key="frame" x="258" y="342" width="85" height="30"/>
+                    <color key="backgroundColor" red="1" green="0.55766603449999996" blue="0.29992094619999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="Submit">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="createUserBtnPressed:" destination="-1" eventType="touchUpInside" id="RCT-8e-kXG"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.34080323870000001" green="0.63742505419999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Hnz-5I-uuj" secondAttribute="trailing" constant="34" id="0Wo-b6-UWC"/>
+                <constraint firstItem="aja-eE-qZH" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="AKN-5F-dBB"/>
+                <constraint firstItem="aja-eE-qZH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="34" id="NZe-rW-6bZ"/>
+                <constraint firstAttribute="trailing" secondItem="aja-eE-qZH" secondAttribute="trailing" constant="34" id="Xg0-xW-xZa"/>
+                <constraint firstItem="QiD-fB-SS1" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="XoD-qG-w2s"/>
+                <constraint firstItem="Hnz-5I-uuj" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="34" id="ZS9-ds-MZZ"/>
+                <constraint firstItem="QiD-fB-SS1" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="34" id="hHo-Gh-sNe"/>
+                <constraint firstItem="WXA-zs-Yu9" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="hfc-oY-fZM"/>
+                <constraint firstAttribute="trailing" secondItem="QiD-fB-SS1" secondAttribute="trailing" constant="34" id="iUu-2t-yi1"/>
+                <constraint firstItem="Hnz-5I-uuj" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="yuW-MU-RLH"/>
+            </constraints>
+            <point key="canvasLocation" x="380" y="356"/>
         </view>
     </objects>
 </document>

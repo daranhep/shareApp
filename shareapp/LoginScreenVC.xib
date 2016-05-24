@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginScreenVC" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginScreenVC" customModule="shareapp" customModuleProvider="target">
             <connections>
+                <outlet property="emailTextField" destination="Mcc-4X-xwn" id="EPs-mY-eZJ"/>
+                <outlet property="passwordTextField" destination="GOL-7g-TT9" id="fm9-Oo-37f"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -13,7 +16,55 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KHr-gH-2pq">
+                    <rect key="frame" x="235" y="506" width="130" height="30"/>
+                    <color key="backgroundColor" red="1" green="0.55766603449999996" blue="0.29992094619999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="Facebook Login">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="fbLoginBtnPressed:" destination="-1" eventType="touchUpInside" id="QRW-Ly-XSm"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="31W-sG-n6T">
+                    <rect key="frame" x="235" y="552" width="130" height="30"/>
+                    <color key="backgroundColor" red="1" green="0.55766603449999996" blue="0.29992094619999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="SignUp">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="signUp:" destination="-1" eventType="touchUpInside" id="84l-Te-Lc7"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mcc-4X-xwn">
+                    <rect key="frame" x="37" y="197" width="527" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Login" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GOL-7g-TT9">
+                    <rect key="frame" x="37" y="240" width="527" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l6Y-ZZ-kxD">
+                    <rect key="frame" x="235" y="285" width="130" height="30"/>
+                    <color key="backgroundColor" red="1" green="0.55766603449999996" blue="0.29992094619999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="Login">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="loginBtnPressed:" destination="-1" eventType="touchUpInside" id="rHo-uf-rCs"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.34080323870000001" green="0.63742505419999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="31W-sG-n6T" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="F5N-em-92P"/>
+                <constraint firstItem="KHr-gH-2pq" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="arI-bu-0tZ"/>
+                <constraint firstItem="31W-sG-n6T" firstAttribute="top" secondItem="KHr-gH-2pq" secondAttribute="bottom" constant="8" id="wOr-tq-HOX"/>
+                <constraint firstItem="KHr-gH-2pq" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="zGc-dL-ZGz"/>
+            </constraints>
         </view>
     </objects>
 </document>

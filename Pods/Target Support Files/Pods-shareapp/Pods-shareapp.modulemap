@@ -1,0 +1,6 @@
+framework module Pods_shareapp {
+  umbrella header "Pods-shareapp-umbrella.h"
+
+  export *
+  module * { export * }
+}
