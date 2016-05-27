@@ -23,6 +23,16 @@
 		E02486501CF4D8080018BEC1 /* SignUpVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E024864E1CF4D8080018BEC1 /* SignUpVC.xib */; };
 		E02486531CF4E08C0018BEC1 /* SignFacebookOrSignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02486511CF4E08C0018BEC1 /* SignFacebookOrSignupVC.swift */; };
 		E02486541CF4E08C0018BEC1 /* SignFacebookOrSignupVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E02486521CF4E08C0018BEC1 /* SignFacebookOrSignupVC.xib */; };
+		E04869191CF8EC8D00D38393 /* tableViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04869171CF8EC8D00D38393 /* tableViewVC.swift */; };
+		E048691A1CF8EC8D00D38393 /* tableViewVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E04869181CF8EC8D00D38393 /* tableViewVC.xib */; };
+		E050A7871CF66EBD007E9413 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E050A7851CF66EBD007E9413 /* HomeVC.swift */; };
+		E050A7881CF66EBD007E9413 /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E050A7861CF66EBD007E9413 /* HomeVC.xib */; };
+		E050A78B1CF66EF4007E9413 /* MessengerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E050A7891CF66EF4007E9413 /* MessengerVC.swift */; };
+		E050A78C1CF66EF4007E9413 /* MessengerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E050A78A1CF66EF4007E9413 /* MessengerVC.xib */; };
+		E050A78F1CF66F02007E9413 /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E050A78D1CF66F02007E9413 /* CameraVC.swift */; };
+		E050A7901CF66F02007E9413 /* CameraVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E050A78E1CF66F02007E9413 /* CameraVC.xib */; };
+		E050A7931CF66F10007E9413 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E050A7911CF66F10007E9413 /* ProfileVC.swift */; };
+		E050A7941CF66F10007E9413 /* ProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E050A7921CF66F10007E9413 /* ProfileVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +55,16 @@
 		E024864E1CF4D8080018BEC1 /* SignUpVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignUpVC.xib; sourceTree = "<group>"; };
 		E02486511CF4E08C0018BEC1 /* SignFacebookOrSignupVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignFacebookOrSignupVC.swift; sourceTree = "<group>"; };
 		E02486521CF4E08C0018BEC1 /* SignFacebookOrSignupVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignFacebookOrSignupVC.xib; sourceTree = "<group>"; };
+		E04869171CF8EC8D00D38393 /* tableViewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tableViewVC.swift; sourceTree = "<group>"; };
+		E04869181CF8EC8D00D38393 /* tableViewVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = tableViewVC.xib; sourceTree = "<group>"; };
+		E050A7851CF66EBD007E9413 /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		E050A7861CF66EBD007E9413 /* HomeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
+		E050A7891CF66EF4007E9413 /* MessengerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessengerVC.swift; sourceTree = "<group>"; };
+		E050A78A1CF66EF4007E9413 /* MessengerVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessengerVC.xib; sourceTree = "<group>"; };
+		E050A78D1CF66F02007E9413 /* CameraVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraVC.swift; sourceTree = "<group>"; };
+		E050A78E1CF66F02007E9413 /* CameraVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CameraVC.xib; sourceTree = "<group>"; };
+		E050A7911CF66F10007E9413 /* ProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		E050A7921CF66F10007E9413 /* ProfileVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileVC.xib; sourceTree = "<group>"; };
 		E21D0CD9C53EC63421C250F2 /* Pods_shareapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_shareapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -152,6 +172,7 @@
 		E00FE4171CF10CEE0089FD3B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E050A7951CF66F14007E9413 /* Main */,
 				E00BD8981CF3B385005A2D61 /* SignIn */,
 			);
 			name = View;
@@ -160,10 +181,8 @@
 		E00FE4181CF10CF30089FD3B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				E02486451CF4C0310018BEC1 /* LoginScreenVC.swift */,
-				E02486491CF4C3820018BEC1 /* MainScreenVC.swift */,
-				E024864D1CF4D8080018BEC1 /* SignUpVC.swift */,
-				E02486511CF4E08C0018BEC1 /* SignFacebookOrSignupVC.swift */,
+				E050A7971CF66F39007E9413 /* Main */,
+				E050A7961CF66F2F007E9413 /* SignIn */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -174,6 +193,49 @@
 				E01593251CF2A19000E17A0B /* Constants.swift */,
 			);
 			name = Util;
+			sourceTree = "<group>";
+		};
+		E04869061CF8C16800D38393 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				E04869171CF8EC8D00D38393 /* tableViewVC.swift */,
+				E04869181CF8EC8D00D38393 /* tableViewVC.xib */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		E050A7951CF66F14007E9413 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				E04869061CF8C16800D38393 /* Cells */,
+				E050A7861CF66EBD007E9413 /* HomeVC.xib */,
+				E050A78A1CF66EF4007E9413 /* MessengerVC.xib */,
+				E050A78E1CF66F02007E9413 /* CameraVC.xib */,
+				E050A7921CF66F10007E9413 /* ProfileVC.xib */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		E050A7961CF66F2F007E9413 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				E02486451CF4C0310018BEC1 /* LoginScreenVC.swift */,
+				E02486491CF4C3820018BEC1 /* MainScreenVC.swift */,
+				E024864D1CF4D8080018BEC1 /* SignUpVC.swift */,
+				E02486511CF4E08C0018BEC1 /* SignFacebookOrSignupVC.swift */,
+			);
+			name = SignIn;
+			sourceTree = "<group>";
+		};
+		E050A7971CF66F39007E9413 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				E050A7851CF66EBD007E9413 /* HomeVC.swift */,
+				E050A7891CF66EF4007E9413 /* MessengerVC.swift */,
+				E050A78D1CF66F02007E9413 /* CameraVC.swift */,
+				E050A7911CF66F10007E9413 /* ProfileVC.swift */,
+			);
+			name = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,8 +305,13 @@
 				E02486481CF4C0310018BEC1 /* LoginScreenVC.xib in Resources */,
 				E00FE40E1CF10C4A0089FD3B /* LaunchScreen.storyboard in Resources */,
 				E00D3A111CF13509000E8C7C /* GoogleService-Info.plist in Resources */,
+				E050A7881CF66EBD007E9413 /* HomeVC.xib in Resources */,
 				E02486541CF4E08C0018BEC1 /* SignFacebookOrSignupVC.xib in Resources */,
+				E050A78C1CF66EF4007E9413 /* MessengerVC.xib in Resources */,
+				E048691A1CF8EC8D00D38393 /* tableViewVC.xib in Resources */,
 				E00FE40B1CF10C4A0089FD3B /* Assets.xcassets in Resources */,
+				E050A7901CF66F02007E9413 /* CameraVC.xib in Resources */,
+				E050A7941CF66F10007E9413 /* ProfileVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,11 +370,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E050A7931CF66F10007E9413 /* ProfileVC.swift in Sources */,
 				E02486471CF4C0310018BEC1 /* LoginScreenVC.swift in Sources */,
+				E050A78F1CF66F02007E9413 /* CameraVC.swift in Sources */,
+				E050A7871CF66EBD007E9413 /* HomeVC.swift in Sources */,
 				E00FE4041CF10C4A0089FD3B /* AppDelegate.swift in Sources */,
 				E02486531CF4E08C0018BEC1 /* SignFacebookOrSignupVC.swift in Sources */,
+				E04869191CF8EC8D00D38393 /* tableViewVC.swift in Sources */,
 				E01593261CF2A19000E17A0B /* Constants.swift in Sources */,
 				E024864F1CF4D8080018BEC1 /* SignUpVC.swift in Sources */,
+				E050A78B1CF66EF4007E9413 /* MessengerVC.swift in Sources */,
 				E024864B1CF4C3820018BEC1 /* MainScreenVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

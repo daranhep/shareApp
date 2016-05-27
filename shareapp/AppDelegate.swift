@@ -15,13 +15,37 @@ import FBSDKLoginKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var tabBarcontroller: UITabBarController?
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         FIRApp.configure()
         
+        // Override point for customization after application launch.
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        self
+        
+        // Set up the first View Controller
+        let homeVC = HomeVC(nibName: "HomeVC", bundle: nil)
+        homeVC.tabBarItem.title = "Home"
+        
+        // Set up the second View Controller
+        let messengerVC = MessengerVC(nibName: "MessengerVC", bundle: nil)
+        messengerVC.tabBarItem.title = "Messenger"
+        
+        // Set up the second View Controller
+        let cameraVC = CameraVC(nibName: "CameraVC", bundle: nil)
+        cameraVC.tabBarItem.title = "Camera"
+        
+        // Set up the second View Controller
+        let profileVC = ProfileVC(nibName: "ProfileVC", bundle: nil)
+        profileVC.tabBarItem.title = "Camera"
+        
+        // Set up the Tab Bar Controller to have two tabs
+        self.tabBarcontroller = UITabBarController()
+        self.tabBarcontroller?.setViewControllers([homeVC, messengerVC, cameraVC, profileVC], animated: false)
+        
         let loginScreen = LoginScreenVC(nibName: "LoginScreenVC", bundle: nil)
         window?.rootViewController = loginScreen
         window?.makeKeyAndVisible()

@@ -112,8 +112,10 @@ class LoginScreenVC: UIViewController {
     }
     
     func signedIn(user: FIRUser) {
-        mainScreenVC = MainScreenVC(nibName: "MainScreenVC", bundle: nil)
-        presentViewController(mainScreenVC, animated: true, completion: nil)
+        let appDelegate: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        appDelegate.window?.rootViewController = appDelegate.tabBarcontroller
+        
+        
     }
     
     
